@@ -1,0 +1,22 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "Bacchetta.co",
+  "author": "Jason Bacchetta",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jabacchetta/resume.git"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next build && next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "next": "^4.1.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
