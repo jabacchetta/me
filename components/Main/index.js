@@ -5,10 +5,18 @@ import Contact from '../Contact'
 class Main extends React.Component {
   state = { about: true }
 
+  toggleView = () => this.setState({ about: !this.state.about })
+
+  renderContent() {
+    const { state, toggleView } = this;
+    if (state.about) return <About toggleView={toggleView} />
+    return <Contact toggleView={toggleView} />
+  }
+
   render() {
     return (
       <main>
-        {this.state.about ? <About /> : <Contact />}
+        {this.renderContent()}
         <style jsx>{`
           :global(html) {
             box-sizing: border-box;
@@ -24,7 +32,7 @@ class Main extends React.Component {
             width: 61.80339887vw;
             height: 100vh;
             width: 61.80339887vw;
-            background: linear-gradient(45deg, rgba(132,67,138,0.31) 21%, rgba(65,129,224,0.188) 100%), url(https://image.shutterstock.com/z/stock-photo-abstract-polygonal-space-low-poly-dark-background-with-connecting-dots-and-lines-connection-488923051.jpg) center / cover, #515369;
+            background: linear-gradient(45deg, rgba(132,67,138,0.31) 21%, rgba(65,129,224,0.188) 100%), url(/static/background.jpg) center / cover, #515369;
           }
 
           main {
