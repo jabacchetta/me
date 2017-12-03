@@ -7,7 +7,7 @@ const Text = ({ Element = 'p', white = false, light = false, button = false, chi
       span {
         display: inline-block;
         text-transform: ${button ? 'uppercase' : 'none'};
-        letter-spacing: ${button ? '0.2' : '0.05'}rem;
+        letter-spacing: ${button ? 'var(--letter-spacing-lg)' : 'inherit'};
         margin-bottom: ${button ? '0' : Element === 'p' ? '2.5' : '1.75'}rem;
         line-height: ${Element === 'h1' || Element === 'h2' ? '1.125' : '1.625'};
         font-weight: ${Element === 'h1' || Element === 'h2' || button ? '900' : light ? '300' : '400'};

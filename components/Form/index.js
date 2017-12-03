@@ -10,6 +10,10 @@ const Form = () => (
       Submit
     </Button>
     <style jsx>{`
+      ::placeholder {
+        color: var(--color-primary-light);
+      }
+
       input {
         font-size: 1rem;
         height: 3rem;
@@ -17,13 +21,13 @@ const Form = () => (
         width: 100%;
         margin-bottom: 1.725rem;
         padding: 0 1.05rem;
-        color: #515369;
-        border: solid 1px rgba(81,83,105,0.239);
+        color: var(--color-primary);
+        border: solid 1px var(--color-primary-light-more);
       }
 
       textarea {
-        color: #515369;
-        border: solid 1px rgba(81,83,105,0.239);
+        color: var(--color-primary);
+        border: solid 1px var(--color-primary-light-more);
         border-radius: 0.5rem;
         width: 100%;
         margin-bottom: 1.725rem;
@@ -35,8 +39,8 @@ const Form = () => (
       input:focus,
       textarea:focus {
         outline: none;
-        border-color: #46C7B0;
-        box-shadow: 0 0 0 1px #46C7B0;
+        border-color: var(--color-secondary);
+        box-shadow: 0 0 0 1px var(--color-secondary);
       }
     `}</style>
   </form>

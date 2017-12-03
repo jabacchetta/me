@@ -10,16 +10,16 @@ const Button = ({ primary, children, onClick }) => (
       button {
         margin-bottom: 1.25rem;
         cursor:pointer;
-        background-color: ${primary ? '#46C7B0' : 'transparent'};
-        border: ${primary ? 'none' : 'solid 1px #515369'};
+        background-color: ${primary ? 'var(--color-secondary)' : 'transparent'};
+        border: ${primary ? 'none' : 'solid 1px var(--color-primary)'};
         border-radius: 2rem;
         width: 15rem;
         height: 3.25rem;
-        transition: 0.25s;
+        transition: var(--hover-duration-fast);
       }
 
       button:hover {
-        background-color: ${primary ? '#58D6C0' : 'transparent'};
+        background-color: ${primary ? 'var(--color-secondary-light-less)' : 'transparent'};
       }
     `}</style>
   </button>

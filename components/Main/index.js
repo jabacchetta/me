@@ -18,33 +18,12 @@ class Main extends React.Component {
       <main>
         {this.renderContent()}
         <style jsx>{`
-          :global(html) {
-            box-sizing: border-box;
-            font-size: 16px;
-            font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
-          }
-
-          :global(h1, h2, p) {
-            margin: 0;
-          }
-
-          :global(body:before) {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 61.80339887vw;
-            height: 100vh;
-            width: 61.80339887vw;
-            background: linear-gradient(45deg, rgba(132,67,138,0.31) 21%, rgba(65,129,224,0.188) 100%), url(${process.env.url}/static/background.jpg) center / cover, #515369;
-          }
-
           main {
             top: 0;
             right: 0;
             position: fixed;
             height: 100vh;
-            width: 38.19660113vw;
+            width: var(--main-width);
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
