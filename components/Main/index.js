@@ -48,7 +48,7 @@ class Main extends React.Component {
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            padding: 4rem 4.25rem;
+            padding: 1.725rem 4.25rem;
             align-items: center;
             justify-content: center;
             text-align: center;

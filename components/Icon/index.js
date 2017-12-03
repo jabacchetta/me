@@ -12,6 +12,7 @@ const Icon = ({ icon }) => (
         border-radius: 50%;
         padding: 8px;
         transition: 0.25s;
+        margin: 0 8px 8px;
       }
 
       svg:hover {

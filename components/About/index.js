@@ -10,11 +10,11 @@ const About = ({ toggleView }) => ([
     sports fan, coffee aficionado, cryptocurrency investor, Google fanboy, video game addict, Game
     of Thrones enthusiast, fantasy football champ, aspiring wordsmith, would-be philosopher.
   </Text>,
-  <Button primary onClick={toggleView}>Contact</Button>,
-  <Button onClick={() => window.open(`${process.env.url}/static/Resume.pdf`)}>
+  <Button key="btn1" primary onClick={toggleView}>Contact</Button>,
+  <Button key="btn2" onClick={() => window.open(`${process.env.url}/static/Resume.pdf`)}>
     Resume
   </Button>,
-  <Social />,
+  <Social key="social" />,
 ])
 
 export default About
