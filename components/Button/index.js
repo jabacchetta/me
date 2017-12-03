@@ -9,7 +9,6 @@ const Button = ({ primary, children, onClick }) => (
     <style jsx>{`
       button {
         margin-bottom: 1.25rem;
-        cursor:pointer;
         background-color: ${primary ? 'var(--color-secondary)' : 'transparent'};
         border: ${primary ? 'none' : 'solid 1px var(--color-primary)'};
         border-radius: 2rem;
