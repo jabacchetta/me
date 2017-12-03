@@ -1,22 +1,68 @@
 import React from 'react'
 
-const Text = ({ Element = 'p', white = false, light = false, button = false, children }) => (
-  <Element>
-    <span>{children}</span>
-    <style jsx>{`
+const getElement = ({ title, subtitle, content }) => {
+  if (title) return 'h1';
+  else if (subtitle) return 'h2';
+  else if (content) return 'p';
+  return 'span';
+}
+
+const getClassName = ({ title, subtitle, primaryButton, secondaryButton }) => {
+  if (title) return 'title';
+  else if (subtitle) return 'subtitle';
+  else if (primaryButton) return 'primaryButton';
+  else if (secondaryButton) return 'secondaryButton';
+  return 'content';
+}
+
+const Text = (props) => {
+  const Element = getElement(props);
+  const className = getClassName(props);
+
+  return (
+    <Element>
+      <span className={className}>{props.children}</span>
+      <style jsx>{`
       span {
         display: inline-block;
-        text-transform: ${button ? 'uppercase' : 'none'};
-        letter-spacing: ${button ? 'var(--letter-spacing-lg)' : 'inherit'};
-        margin-bottom: ${button ? '0' : Element === 'p' ? '2.5' : '1.75'}rem;
-        line-height: ${Element === 'h1' || Element === 'h2' ? '1.125' : '1.625'};
-        font-weight: ${Element === 'h1' || Element === 'h2' || button ? '900' : light ? '300' : '400'};
-        color: #${white ? 'fff' : '515369'};
-        font-size: ${Element === 'h1' ? '3.25' : Element === 'h2' ? '2.25' : button ? '0.75' : '1'}rem;
-        font-family: ${Element === 'h1' || Element === 'h2' || button ? 'Muli' : 'Roboto'};
+      }
+
+      .content {
+        line-height: 1.625;
+        margin-bottom: 2.5rem;
+      }
+
+      .title,
+      .subtitle {
+        margin-bottom: 1.75rem;
+        font-family: Muli;
+        line-height: 1.125;
+        font-weight: 900;
+      }
+
+      .title {
+        font-size: 3.25rem;
+      }
+
+      .subtitle {
+        font-size: 2.25rem;
+      }
+
+      .primaryButton,
+      .secondaryButton {
+        font-size: 0.75rem;
+        font-family: Muli;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: var(--letter-spacing-lg);
+      }
+
+      .primaryButton {
+        color: #fff;
       }
     `}</style>
-  </Element>
-)
+    </Element>
+  )
+}
 
 export default Text

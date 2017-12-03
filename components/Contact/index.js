@@ -4,8 +4,8 @@ import Form from '../Form'
 import Text from '../Text'
 
 const Contact = ({ toggleView }) => ([
-  <Text key="title" Element="h2">Contact</Text>,
-  <Text key="text" light>
+  <Text key="title" subtitle>Contact</Text>,
+  <Text key="text" content>
     Opportunities, partnerships, questions, or general inquiries? Get in touch!
   </Text>,
   <Form key="form" />,

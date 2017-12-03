@@ -6,6 +6,8 @@ export default `
     line-height: 1.6;
     font-size: 1em;
     letter-spacing: var(--letter-spacing-sm);
+    color: var(--color-primary);
+    font-weight: 300;
   }
 
   body:before {

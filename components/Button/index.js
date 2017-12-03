@@ -3,7 +3,7 @@ import Text from '../Text'
 
 const Button = ({ primary, children, onClick }) => (
   <button onClick={onClick}>
-    <Text white={primary} button>
+    <Text {...{ primaryButton: primary, secondaryButton: !primary }} button>
       {children}
     </Text>
     <style jsx>{`

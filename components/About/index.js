@@ -4,8 +4,8 @@ import Social from '../Social'
 import Text from '../Text'
 
 const About = ({ toggleView }) => ([
-  <Text key="title" Element="h1">Jason Bacchetta</Text>,
-  <Text key="text" light>
+  <Text key="title" title>Jason Bacchetta</Text>,
+  <Text key="text" content>
     Husband, father, theist, entrepreneur, software engineer, brand architect, technology hound,
     sports fan, coffee aficionado, cryptocurrency investor, Google fanboy, video game addict, Game
     of Thrones enthusiast, fantasy football champ, aspiring wordsmith, would-be philosopher.
