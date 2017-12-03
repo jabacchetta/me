@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from '../Button'
-import Social from '../Social'
-import Text from '../Text'
+import Button from '../../elements/Button/index'
+import Social from '../Social/index'
+import Text from '../../elements/Text/index'
 
 const About = ({ toggleView }) => ([
   <Text key="title" title>Jason Bacchetta</Text>,

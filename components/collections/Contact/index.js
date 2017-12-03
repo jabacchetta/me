@@ -1,7 +1,7 @@
 import React from 'react'
-import Button from '../Button'
-import Form from '../Form'
-import Text from '../Text'
+import Button from '../../elements/Button/index'
+import Form from '../Form/index'
+import Text from '../../elements/Text/index'
 
 const Contact = ({ toggleView }) => ([
   <Text key="title" subtitle>Contact</Text>,

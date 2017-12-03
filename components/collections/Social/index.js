@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from '../Icon'
+import Icon from '../../elements/Icon/index'
 
 const Social = () => (
   <ul>

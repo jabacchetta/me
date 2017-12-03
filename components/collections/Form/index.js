@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../Button'
+import Button from '../../elements/Button/index'
 
 const Form = () => (
   <form>
