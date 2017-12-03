@@ -20,24 +20,22 @@ class Main extends React.Component {
         <style jsx>{`
           main {
             top: var(--background-mobile-height);
-            height: auto;
             width: 100%;
             right: 0;
-            position: fixed;
+            position: absolute;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
-            padding: 1.725rem 4.25rem;
+            padding: 4rem 4.25rem;
             align-items: center;
             justify-content: center;
             text-align: center;
             background-color: #FFFFFF;
           }
 
-          @media (min-width: 980px) {
+          @media (min-width: 1280px) {
             main {
               top: 0;
-              height: 100vh;
               width: calc(100vw - var(--background-desktop-width));
             }
           }

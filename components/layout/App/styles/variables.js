@@ -5,7 +5,7 @@ export default css`
   :root {
     /* Main Content */
     --background-desktop-width: 61.80339887vw;
-    --background-mobile-height: 45vh;
+    --background-mobile-height: 38.19660113vh;
 
     /* Brand Colors */
     --color-primary: rgba(81, 83, 105, 1);
