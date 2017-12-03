@@ -2,7 +2,7 @@ import React from 'react'
 
 const Icon = ({ icon }) => (
   <svg>
-    <use xlinkHref={`/static/map.svg#${icon.toLowerCase()}`} />
+    <use xlinkHref={`${process.env.url}/static/map.svg#${icon.toLowerCase()}`} />
     <style jsx>{`
       svg {
         height: 24px;

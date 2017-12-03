@@ -13,7 +13,7 @@ const Button = ({ primary, children, onClick }) => (
         background-color: ${primary ? '#46C7B0' : 'transparent'};
         border: ${primary ? 'none' : 'solid 1px #515369'};
         border-radius: 2rem;
-        width: 13rem;
+        width: 15rem;
         height: 3.25rem;
         transition: 0.25s;
       }

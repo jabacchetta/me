@@ -21,7 +21,11 @@ class Main extends React.Component {
           :global(html) {
             box-sizing: border-box;
             font-size: 16px;
-            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            font-family: Roboto, 'Helvetica Neue', Arial, sans-serif;
+          }
+
+          :global(h1, h2, p) {
+            margin: 0;
           }
 
           :global(body:before) {
@@ -32,21 +36,21 @@ class Main extends React.Component {
             width: 61.80339887vw;
             height: 100vh;
             width: 61.80339887vw;
-            background: linear-gradient(45deg, rgba(132,67,138,0.31) 21%, rgba(65,129,224,0.188) 100%), url(/static/background.jpg) center / cover, #515369;
+            background: linear-gradient(45deg, rgba(132,67,138,0.31) 21%, rgba(65,129,224,0.188) 100%), url(${process.env.url}/static/background.jpg) center / cover, #515369;
           }
 
           main {
-            display: flex;
-            flex-direction: column;
             top: 0;
             right: 0;
-            padding: 4rem 4.25rem;
             position: fixed;
             height: 100vh;
             width: 38.19660113vw;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 4.25rem;
             align-items: center;
             justify-content: center;
-            box-sizing: border-box;
             text-align: center;
             background-color: #FFFFFF;
           }
