@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../Button'
+import Social from '../Social'
 import Text from '../Text'
 
 const About = ({ toggleView }) => ([
@@ -12,6 +13,7 @@ const About = ({ toggleView }) => ([
   </Text>,
   <Button primary onClick={toggleView}>Contact</Button>,
   <Button>Download Resume</Button>,
+  <Social />
 ])
 
 export default About
