@@ -4,7 +4,8 @@ import css from 'styled-jsx/css'
 export default css`
   :root {
     /* Main Content */
-    --main-width: 38.19660113vw;
+    --background-desktop-width: 61.80339887vw;
+    --background-mobile-height: 45vh;
 
     /* Brand Colors */
     --color-primary: rgba(81, 83, 105, 1);

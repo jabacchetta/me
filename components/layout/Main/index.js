@@ -19,11 +19,11 @@ class Main extends React.Component {
         {this.renderContent()}
         <style jsx>{`
           main {
-            top: 0;
+            top: var(--background-mobile-height);
+            height: auto;
+            width: 100%;
             right: 0;
             position: fixed;
-            height: 100vh;
-            width: var(--main-width);
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -32,6 +32,14 @@ class Main extends React.Component {
             justify-content: center;
             text-align: center;
             background-color: #FFFFFF;
+          }
+
+          @media (min-width: 980px) {
+            main {
+              top: 0;
+              height: 100vh;
+              width: calc(100vw - var(--background-desktop-width));
+            }
           }
     `}</style>
       </main>
