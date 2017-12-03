@@ -1,7 +1,7 @@
 import React from 'react'
 
-import App from '../components/collections/App'
-import Main from '../components/collections/Main'
+import App from '../components/layout/App'
+import Main from '../components/layout/Main'
 
 const Home = () => <App><Main /></App>
 

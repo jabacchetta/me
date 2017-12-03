@@ -1,6 +1,6 @@
 import React from 'react'
-import About from '../About'
-import Contact from '../Contact'
+import About from '../../collections/About/index'
+import Contact from '../../collections/Contact/index'
 
 class Main extends React.Component {
   state = { about: true }
