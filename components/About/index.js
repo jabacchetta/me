@@ -11,7 +11,9 @@ const About = ({ toggleView }) => ([
     of Thrones enthusiast, fantasy football champ, aspiring wordsmith, would-be philosopher.
   </Text>,
   <Button primary onClick={toggleView}>Contact</Button>,
-  <Button>Download Resume</Button>,
+  <Button onClick={() => window.open(`${process.env.url}/static/Resume.pdf`)}>
+    Resume
+  </Button>,
   <Social />,
 ])
 
