@@ -17,7 +17,7 @@ export default `
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(45deg, rgba(132, 67, 138, 0.31) 21%, rgba(65, 129, 224, 0.188) 100%), url(${process.env.url}/static/background@4x.jpg) center / cover, var(--color-primary);
+    background: linear-gradient(45deg, rgba(132, 67, 138, 0.31) 21%, rgba(65, 129, 224, 0.188) 100%), url(/static/background@4x.jpg) center / cover, var(--color-primary);
   }
   
   @media (min-width: 1280px) {
