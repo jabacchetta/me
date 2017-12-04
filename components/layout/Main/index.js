@@ -5,7 +5,10 @@ import Contact from '../../collections/Contact/index'
 class Main extends React.Component {
   state = { about: true }
 
-  toggleView = () => this.setState({ about: !this.state.about })
+  toggleView = () => {
+    window.scrollTo(0, 0);
+    this.setState({ about: !this.state.about })
+  }
 
   renderContent() {
     const { state, toggleView } = this;
@@ -35,6 +38,7 @@ class Main extends React.Component {
           @media (min-width: 1280px) {
             main {
               top: 0;
+              min-height: 100%;
               width: calc(100vw - var(--background-desktop-width));
             }
           }
