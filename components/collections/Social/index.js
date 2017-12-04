@@ -23,6 +23,12 @@ const Social = () => (
         padding: 0;
         list-style: none;
         display: flex;
+        margin: 1.25rem 0;
+      }
+
+      a {
+        display: flex;
+        margin: 0 8px 0;
       }
     `}</style>
   </ul>

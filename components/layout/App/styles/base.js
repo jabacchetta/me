@@ -26,6 +26,12 @@ export default `
       width: var(--background-desktop-width);
     }
   }
+  
+  main,
+  input,
+  textarea {
+    box-sizing: border-box;
+  }
 
   button {
     cursor: pointer;

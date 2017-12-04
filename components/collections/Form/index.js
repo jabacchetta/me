@@ -33,7 +33,7 @@ const Form = () => (
         margin-bottom: 1.725rem;
         font-size: 1rem;
         padding: 1.05rem;
-        height: 9rem;
+        height: 6rem;
       }
 
       input:focus,

@@ -23,7 +23,6 @@ class Main extends React.Component {
             width: 100%;
             right: 0;
             position: absolute;
-            box-sizing: border-box;
             display: flex;
             flex-direction: column;
             padding: 4rem 4.25rem;
