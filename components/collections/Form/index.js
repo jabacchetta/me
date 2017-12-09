@@ -2,10 +2,11 @@ import React from 'react'
 import Button from '../../elements/Button/index'
 
 const Form = () => (
-  <form>
-    <input type="name" placeholder="Name" />
-    <input type="email" placeholder="Email" />
-    <textarea placeholder="Message" />
+  <form action="https://formspree.io/jason@bacchetta.co" method="POST">
+    <input type="text" placeholder="Name" name="name" />
+    <input type="email" placeholder="Email" name="email" />
+    <input type="hidden" value="Message via bacchetta.co" name="_subject" />
+    <textarea placeholder="Message" name="message" />
     <Button primary>
       Submit
     </Button>
