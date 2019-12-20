@@ -18,6 +18,11 @@ const Social = () => (
         <Icon icon="stackoverflow" />
       </a>
     </li>
+    <li>
+      <a href="https://twitter.com/jabacchetta" rel="noopener noreferrer" target="_blank">
+        <Icon icon="twitter" />
+      </a>
+    </li>
     <style jsx>{`
       ul {
         padding: 0;

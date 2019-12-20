@@ -1,10 +1,15 @@
-# Build files
+# Build
 build/
 .next/
 
-# Node modules
+# Dependencies
 node_modules/
 
-# WebStorm files
-.idea/
+# WebStorm
+.idea
+
+# macOS
 .DS_Store
+
+# VSCode
+.vscode
