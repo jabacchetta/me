@@ -1,12 +1,12 @@
 {
-  "name": "resume",
+  "name": "bacchetta.co",
   "version": "1.0.0",
-  "description": "Bacchetta.co",
+  "description": "Website for bacchetta.co",
   "author": "Jason Bacchetta",
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jabacchetta/resume.git"
+    "url": "https://github.com/jabacchetta/bacchetta.co.git"
   },
   "scripts": {
     "dev": "next",
