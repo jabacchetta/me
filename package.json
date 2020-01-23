@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jabacchetta/bacchetta.co.git"
+    "url": "https://github.com/jabacchetta/resume.git"
   },
   "scripts": {
     "dev": "next",
